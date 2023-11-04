@@ -1,2 +1,2 @@
 # AYC
-A job recruitment portal
+A landing page and job recruitment portal
