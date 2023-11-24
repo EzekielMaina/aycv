@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portal | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../index3.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Dashboard</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Stephen</a>
+            </div>
+          </div>
+
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+                   with font-awesome or any other icon font library -->
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-tachometer-alt nav-icon"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-bell"></i>
+                  <p>
+                    Activities
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Semester Registration</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Units Registration</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Exam Card</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index3.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Transcript</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            </nav>
+    
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="row">
+            <!-- accepted payments column -->
+            <div class="col-6">
+              <h2>Semester Registration</h2>
+              <!-- <img src="../../dist/img/credit/visa.png" alt="Visa">
+              <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
+              <img src="../../dist/img/credit/american-express.png" alt="American Express">
+              <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
+       -->
+       <img class="profile-user-img img-fluid img-circle"
+                       src="../dist/img/user4-128x128.jpg"
+                       alt="User profile picture">
+                       <span class="text-muted" style="font-size: 20px;font-weight: 700;text-align: center;">Stephen Otieno</span>
+             
+              <table class="table">
+                <tr>
+                  <th style="width:50%">Registration Number</th>
+                  <td>CCS/00098/019</td>
+                </tr>
+                <tr>
+                    <th style="width:50%">University mail</th>
+                    <td>CCS00098019@student.maseno.ac.ke</td>
+                  </tr>
+                  <tr>
+                    <th style="width:50%">Course</th>
+                    <td>Computer Science</td>
+                  </tr>
+               
+              </table>
+            </div>
+            <!-- /.col -->
+            <div class="col-6">
+              <p class="lead">Select details</p>
+      
+              <div class="table-responsive">
+                <form role="form">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label> Academic Year</label>
+                      <select class="form-control">
+                        <option value="all">Select Academic year</option>
+                        <option value="2020">2020/21</option>
+                        <option value="2021">2021/22</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Year of Study</label>
+                      <select class="form-control">
+                        <option value="all">Select your year</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third year</option>
+                        <option value="4">Fourth Year</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label> My Stage</label>
+                      <select class="form-control">
+                        <option value="all">Select Stage</option>
+                        <option value="#">Y1S1</option>
+                        <option value="#">Y1S2</option>
+                        <option value="#">Y2S1</option>
+                        <option value="#">Y2S2</option>
+                        <option value="#">Y3S1</option>
+                        <option value="#">Y3S2</option>
+                        <option value="#">Y4S1</option>
+                        <option value="#">Y4S2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+  
+                  
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+            <div class="row no-print">
+              <div class="col-6">
+                <button type="submit" class="btn btn-success float-right"><i class="fas fa-download"></i> Register Semester
+                </button>
+              </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+          
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.5
+    </div>
+    <strong>Copyright &copy; 2014-2022 <a href="http://portal.ke">Portal System</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+</body>
+</html>

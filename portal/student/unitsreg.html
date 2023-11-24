@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portal | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../index3.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Dashboard</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Stephen</a>
+            </div>
+          </div>
+
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+                   with font-awesome or any other icon font library -->
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-tachometer-alt nav-icon"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-bell"></i>
+                  <p>
+                    Activities
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Semester Registration</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Units Registration</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Exam Card</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index3.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Transcript</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            </nav>
+    
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="row">
+            <!-- accepted payments column -->
+            <div class="col-12">
+                     <!-- Horizontal Form -->
+            <div class="card card-info">
+                <div class="card-header">
+                  <h3 class="card-title">Register Units</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form class="form-horizontal">
+                    <div class="card-body">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck2">CCS 306,</label>
+                              </div>
+                              <p>Information Systems</p>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck2">CCS 301,</label>
+                              </div>
+                              <p>Programming principles</p>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck2">CCS 309,</label>
+                              </div>
+                              <p>Compiler Construction</p>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck2">CCS 310,</label>
+                              </div>
+                              <p>Automata Theory</p>
+                          </div>
+                        </div>
+                      </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-info">Select</button>
+                    <button type="submit" class="btn btn-default float-right">Clear</button>
+                  </div>
+                  <!-- /.card-footer -->
+                </form>
+              </div>
+              <!-- /.card -->
+       
+            </div>
+            <!-- /.col -->
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <p class="lead">Selection</p>
+      
+               <!-- /.card -->
+
+            <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Selected Units</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th style="width: 40px">Register</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1.</td>
+                        <td>CCS 306</td>
+                        <td>
+                            Information Systems 
+                        </td>
+                        <td>
+                          <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                            <i class="fas fa-angle-double-right"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>CCS 309</td>
+                        <td>
+                         Compiler Construction
+                        </td>
+                        <td>
+                          <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                            <i class="fas fa-angle-double-right"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>CCS 310</td>
+                        <td>
+                          Automata Theory
+                        </td>
+                        <td>
+                          <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                            <i class="fas fa-angle-double-right"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>CCS 312</td>
+                        <td>
+                          Database Administration
+                        </td>
+                        <td>
+                          <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                            <i class="fas fa-angle-double-right"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            
+              <!-- <div class="col-6">
+                <button type="submit" class="btn btn-success float-right"><i class="fas fa-download"></i> Register all
+                </button>
+              </div> -->
+            <!-- /.col -->
+              <div class="col-6">
+                <p class="lead">Registered Units</p>
+      
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Registered Units</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body p-0">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">#</th>
+                          <th>Code</th>
+                          <th>Name</th>
+                          <th style="width: 40px">Deregister</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.</td>
+                          <td>CCS 306</td>
+                          <td>
+                              Information Systems 
+                          </td>
+                          <td>
+                            <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                              <i class="fas fa-undo"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2.</td>
+                          <td>CCS 309</td>
+                          <td>
+                           Compiler Construction
+                          </td>
+                          <td>
+                            <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                              <i class="fas fa-undo"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3.</td>
+                          <td>CCS 310</td>
+                          <td>
+                            Automata Theory
+                          </td>
+                          <td>
+                            <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                              <i class="fas fa-undo"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4.</td>
+                          <td>CCS 312</td>
+                          <td>
+                            Database Administration
+                          </td>
+                          <td>
+                            <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-edit" title="Edit" href="#">
+                              <i class="fas fa-undo"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+          </div>
+          <!-- /.row -->
+          
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.5
+    </div>
+    <strong>Copyright &copy; 2014-2022 <a href="http://portal.ke">Portal System</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+</body>
+</html>
